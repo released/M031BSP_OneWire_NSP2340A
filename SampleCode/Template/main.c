@@ -680,7 +680,7 @@ int main()
     TickSetTickEvent(5000, TickCallback_processB);  // 5000 ms
     #endif
 
-    HOST_BUS_Init();	// BP01 : UART TX  , BP00 : UART RX
+    HOST_BUS_Init();	// BP01 : BUSY  , BP00 : DATA
     GPIO2_SBUSY_INPUT();
     
     N_RESET();
